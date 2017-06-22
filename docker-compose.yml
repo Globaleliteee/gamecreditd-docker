@@ -1,0 +1,9 @@
+---
+daemon:
+#  build: .
+  image: quay.io/kwiksand/gamecreditsd
+  ports:
+   - "40001:40001"
+   - "40002:40002"
+  volumes:
+   - /media/crypto/gamecredits:/home/gamecredits/.gamecredits
